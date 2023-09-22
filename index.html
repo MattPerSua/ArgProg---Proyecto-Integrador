@@ -1,199 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--========================= FAVICON ===========================-->
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
 
     <!--========================= REMIXICONS ===========================-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
 
     <!--========================= CSS ===========================-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-    
     <title>CV Responsivo</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="resume container">
-        <!--========================= HEADER ===========================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Matias</a>
+      <!--========================= HEADER ===========================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">Matias</a>
 
-                <div class="nav__menu">
-                    <ul class="nav__list">
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">
+                  <i class="ri-home-line"></i>
+                </a>
+              </li>
 
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="ri-home-line"></i>
-                            </a>
-                        </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">
+                  <i class="ri-user-line"></i>
+                </a>
+              </li>
 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="ri-user-line"></i>
-                            </a>
-                        </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">
+                  <i class="ri-file-list-line"></i>
+                </a>
+              </li>
 
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-file-list-line"></i>
-                            </a>
-                        </li>
+              <li class="nav__item">
+                <a href="#education" class="nav__link">
+                  <i class="ri-book-line"></i>
+                </a>
+              </li>
 
-                        <li class="nav__item">
-                            <a href="#education" class="nav__link">
-                                <i class="ri-book-line"></i>
-                            </a>
-                        </li>
+              <li class="nav__item">
+                <a href="#work" class="nav__link">
+                  <i class="ri-briefcase-3-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">
-                                <i class="ri-briefcase-3-line"></i>
-                            </a>
-                        </li>
+          <!-- Botón de Modo-->
+          <i class="ri-moon-line cambiar-modo" id="boton-modo"></i>
+        </nav>
+      </header>
 
-                    </ul>
+      <!--========================= MAIN ===========================-->
+      <main class="resume_main">
+        <!-- =========================== HOME ==========================-->
+        <section class="home" id="home">
+          <div class="home__container grid">
+            <h1 class="home__name">
+              HOLA, SOY <br />
+              MATIAS PEREZ SUAREZ
+            </h1>
+            <div class="home__blob">
+              <div class="home__perfil">
+                <img
+                  src="assets/img/perfil.png"
+                  alt="Home image"
+                  class="home__img"
+                />
+              </div>
 
+              <svg
+                class="home__star-1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5-e</title>
+                <path
+                  d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z"
+                />
+              </svg>
+
+              <svg
+                class="home__star-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5-e</title>
+                <path
+                  d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z"
+                />
+              </svg>
+            </div>
+
+            <h1 class="home__profession">
+              FRONTEND <br />
+              DEVELOPER
+            </h1>
+          </div>
+        </section>
+
+        <div class="resume__left">
+          <!--========== ABOUT ==========-->
+          <section class="about section" id="about">
+            <h2 class="section__title">INFORMACION PERSONAL</h2>
+
+            <div class="about__container grid">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Possimus aperiam tenetur dolores placeat dolorum! Qui ut, dolor,
+                illum vero dolorem odio amet nostrum saepe eius repellat dolorum
+                rem, nihil unde.
+              </p>
+
+              <a
+                href="assets/pdf/CV_-_Matias_Perez_Suarez.pdf"
+                download=""
+                class="about__button"
+              >
+                DESCARGAR CV <i class="ri-download-line"></i>
+              </a>
+
+              <ul class="about__social">
+                <li>
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    class="about__social-link"
+                    >GitHub</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://dribbble.com/"
+                    target="_blank"
+                    class="about__social-link"
+                    >Dribbble</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://ar.linkedin.com/"
+                    target="_blank"
+                    class="about__social-link"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== SKILLS ==========-->
+          <section class="skills section" id="skill">
+            <h2 class="section__title">SKILLS</h2>
+
+            <div class="skills__container">
+              <div class="skills__content">
+                <ul class="skills__list">
+                  <li class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i> HTMLS & CSS
+                  </li>
+
+                  <li class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i> JavaScript
+                  </li>
+
+                  <li class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i> GIT & GITHUB
+                  </li>
+
+                  <li class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i> REACT
+                  </li>
+                </ul>
+
+                <ul class="skills__list">
+                  <li class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i> Bootstrap
+                  </li>
+
+                  <li class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i> Figma
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section__title">EDUCACION</h2>
+
+            <div class="educacion__container grid">
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> Inglés Técnico para
+                  Desarrolladores de Software
+                </h2>
+
+                <div class="resume__data">
+                  <span>Argentina Programa 4.0</span>
+
+                  <span>Octubre 2022</span>
+
+                  <a
+                    href="assets/pdf/Certificado-Ingles.pdf"
+                    target="_blank"
+                    class="resume__button-link"
+                  >
+                    Ver<i class="ri-external-link-line"></i>
+                  </a>
                 </div>
+              </div>
 
-                <!-- Botón de Modo-->
-                <i class="ri-moon-line cambiar-modo" id="boton-modo"></i>
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> Desarrollo Frontend
+                </h2>
 
-            </nav>
-        </header>
+                <div class="resume__data">
+                  <span>Argentina Programa 4.0</span>
 
-        <!--========================= MAIN ===========================-->
-        <main class="resume_main">
-            <!-- =========================== HOME ==========================-->
-            <section class="home" id="home">
-                <div class="home__container grid">
-                    <h1 class="home__name">
-                        HOLA, SOY <br>
-                        MATIAS PEREZ SUAREZ
-                    </h1>
-                    <div class="home__blob">
-                        <div class="home__perfil">
-                            <img src="assets/img/perfil.png" alt="Home image" class="home__img">
-                        </div>
+                  <span>Septiembre 2023</span>
 
-                        <svg class="home__star-1" xmlns="http://www.w3.org/2000/svg" width="512" height="512"  viewBox="0 0 512 512"><title>ionicons-v5-e</title>
-                            <path d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z"/>
-                        </svg>
-
-                        <svg class="home__star-2" xmlns="http://www.w3.org/2000/svg" width="512" height="512"  viewBox="0 0 512 512"><title>ionicons-v5-e</title>
-                            <path d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z"/>
-                        </svg>
-                    </div>
-
-                    <h1 class="home__profession">
-                        FRONTEND <br>
-                        DEVELOPER
-                    </h1>
+                  <a
+                    href="assets/pdf/Certificado-Ingles.pdf"
+                    target="_blank"
+                    class="resume__button-link"
+                  >
+                    Ver<i class="ri-external-link-line"></i>
+                  </a>
                 </div>
-            </section>
+              </div>
 
-            <div class="resume__left">
-                
-                <!--========== ABOUT ==========-->
-                <section class="about section" id="about">
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> Dungeon Master
+                </h2>
 
-                    <h2 class="section__title">INFORMACION PERSONAL</h2>
-                    
-                    <div class="about__container grid">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Possimus aperiam tenetur dolores placeat dolorum! 
-                            Qui ut, dolor, illum vero dolorem odio amet nostrum saepe eius repellat dolorum rem, nihil unde.
-                        </p>
+                <div class="resume__data">
+                  <span>Bs As</span>
 
-                        <a href="assets/pdf/CV_-_Matias_Perez_Suarez.pdf" 
-                        download="" class="about__button">
-                            DESCARGAR CV <i class="ri-download-line"></i>
+                  <span>2017 - Actualidad</span>
+
+                  <a
+                    href="assets/pdf/Certificado-Ingles.pdf"
+                    target="_blank"
+                    class="resume__button-link"
+                  >
+                    View<i class="ri-external-link-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <!--================ TRABAJO ====================-->
+          <section class="work section" id="work">
+            <h2 class="section__title">EXPERIENCIA LABORAL</h2>
+
+            <div class="work__container grid">
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> Analista administrativo en Soda Herrmann 
+                </h2>
+
+                <div class="resume__data">
+                  <span>2009-2011</span>
+
+                  <p>Tareas: Administración del listado de clientes y cobranzas. Mantenimiento de la base de datos. </p>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> Técnico de PC Freelance 
+                </h2>
+
+                <div class="resume__data">
+                  <span>2011-2018</span>
+
+                  <p>Reparación de computadoras. Capacitaciones de uso básico de PC.</p>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> Asistente administrativo en Sindicato de aguas y gaseosas SUTIAGA 
+                </h2>
+
+                <div class="resume__data">
+                  <span>2018 - Actualidad</span>
+
+                  <p>Administración del listado de clientes y cobranzas. Mantenimiento de la base de datos. Confección de reportes de estado de clientes. Distribución de documentos de reporte (estado de negocios, padrones de personal, formularios administrativos para delegados). 
+                    </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--================ CERTIFICADOS ====================-->
+          <section class="certificates section">
+
+            <h2 class="section__title">CERTIFICADOS</h2>
+
+            <div class="certificates__container grid">
+                <div>
+                    <h2 class="resume__title">
+                        <i class="ri-arrow-drop-right-line"></i> Diario de Aventura 1
+                    </h2>
+
+                    <div class="resume__data">
+                        <span>2020</span>
+                        <a href="" target="_blank" class="resume__button-link">
+                            Ver <i class="ri-external-link-line"></i>
                         </a>
-
-                        <ul class="about__social">
-                            <li>
-                                <a href="https://github.com/" target="_blank" class="about__social-link">GitHub</a>
-                            </li>
-    
-                            <li>
-                                <a href="https://dribbble.com/" target="_blank" class="about__social-link">Dribbble</a>
-                            </li>
-    
-                            <li>
-                                <a href="https://ar.linkedin.com/" target="_blank" class="about__social-link">Linkedin</a>
-                            </li>
-                        </ul>
                     </div>
-                </section>
+                </div>
 
-                <!--========== SKILLS ==========-->
-                <section class="skills section" id="skill">
+                <div>
+                    <h2 class="resume__title">
+                        <i class="ri-arrow-drop-right-line"></i> Diario de Aventura 2
+                    </h2>
 
-                    <h2 class="section__title">SKILLS</h2>
-
-                    <div class="skills__container">
-                        <div class="skills__content">
-                            <ul class="skills__list">
-                                <li class="resume__title">
-                                    <i class="ri-arrow-drop-right-line"></i> HTMLS & CSS
-                                </li>
-
-                                <li class="resume__title">
-                                    <i class="ri-arrow-drop-right-line"></i> JavaScript
-                                </li>
-
-                                <li class="resume__title">
-                                    <i class="ri-arrow-drop-right-line"></i> GIT & GITHUB
-                                </li>
-
-                                <li class="resume__title">
-                                    <i class="ri-arrow-drop-right-line"></i> REACT
-                                </li>
-                            </ul>
-
-                            <ul class="skills__list">
-                                <li class="resume__title">
-                                    <i class="ri-arrow-drop-right-line"></i> Bootstrap
-                                </li>
-
-                                <li class="resume__title">
-                                    <i class="ri-arrow-drop-right-line"></i> Figma
-                                </li>
-                        
-                            </ul>
-                        </div>
+                    <div class="resume__data">
+                        <span>2021</span>
+                        <a href="" target="_blank" class="resume__button-link">
+                            Ver <i class="ri-external-link-line"></i>
+                        </a>
                     </div>
+                </div>
 
-                </section>
+                <div>
+                    <h2 class="resume__title">
+                        <i class="ri-arrow-drop-right-line"></i> Diario de Aventura 3
+                    </h2>
 
-                <!--========== EDUCATION ==========-->
-                <section class="education section" id="education">
-
-                </section>
-
+                    <div class="resume__data">
+                        <span>2022</span>
+                        <a href="" target="_blank" class="resume__button-link">
+                            Ver <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="resume__right">
+          </section>
 
-            </div>
-            
+          <!--================ REFERENCIAS ====================-->
+          <section class="references section"></section>
+        </div>
+      </main>
 
-        </main>
-
-        <!--========================= FOOTER ===========================-->
-        <footer class="footer">
-
-        </footer>
+      <!--========================= FOOTER ===========================-->
+      <footer class="footer"></footer>
     </div>
 
     <!--========================= SCROLL UP ===========================-->
 
     <!--========================= MAIN JS ===========================-->
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
